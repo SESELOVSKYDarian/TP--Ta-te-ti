@@ -1,0 +1,117 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+  margin: 5em;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.container {
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    "n1 n2 n3"
+    "n4 n5 n6"
+    "n7 n8 n9";
+  gap: 0;
+}
+
+.border {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: fit-content;
+  box-shadow: 0 0 10px #0000002f;
+}
+
+.col {
+  padding: 3em;
+  border: 1px solid #000;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.n1 {
+  grid-area: n1;
+}
+.n2 {
+  grid-area: n2;
+}
+.n3 {
+  grid-area: n3;
+}
+.n4 {
+  grid-area: n4;
+}
+.n5 {
+  grid-area: n5;
+}
+.n6 {
+  grid-area: n6;
+}
+.n7 {
+  grid-area: n7;
+}
+.n8 {
+  grid-area: n8;
+}
+.n9 {
+  grid-area: n9;
+}
+
+.puntos {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "x o"
+    "cantidadx cantidado";
+  justify-content: space-around;
+  width: fit-content;
+  border: 1px solid #000;
+}
+
+.titulo {
+  margin: 0;
+  text-align: center;
+  place-content: center;
+  grid-area: titulo;
+  border-bottom: 1px solid #000;
+}
+
+.x {
+  grid-area: x;
+  padding: 1em;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.o {
+  grid-area: o;
+  padding: 1em;
+  border-bottom: 1px solid #000;
+}
+
+.cantidadx {
+  text-align: center;
+  border-right: 1px solid #000;
+  grid-area: cantidadx;
+}
+
+.cantidado {
+  text-align: center;
+  grid-area: cantidado;
+}
